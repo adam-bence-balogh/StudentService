@@ -1,4 +1,4 @@
-package hu.bab.aopdemo.studentservice;
+package hu.abb.aopdemo.studentservice;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

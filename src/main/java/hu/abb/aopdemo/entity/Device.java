@@ -1,12 +1,15 @@
-package hu.bab.aopdemo.entity;
+package hu.abb.aopdemo.entity;
 
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope("prototype")
 public class Device {
 	private Producer producer;
 	private DeviceType deviceType;
-	private int serialNumber;
+	private String operatingSystem;
 
 	public Producer getProducer() {
 		return producer;
@@ -24,11 +27,11 @@ public class Device {
 		this.deviceType = deviceType;
 	}
 
-	public int getSerialNumber() {
-		return serialNumber;
+	public String getOperatingSystem() {
+		return operatingSystem;
 	}
 
-	public void setSerialNumber(int serialNumber) {
-		this.serialNumber = serialNumber;
+	public void setOperatingSystem(String operatingSystem) {
+		this.operatingSystem = operatingSystem;
 	}
 }

@@ -1,6 +1,6 @@
-package hu.bab.aopdemo.entity;
+package hu.abb.aopdemo.entity;
 
-public class Student {
+public final class Student implements Person{
 	private String name;
 	private int age;
 
